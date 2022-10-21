@@ -1,4 +1,4 @@
-package com.example.itu_communicationapp.ui.news;
+package com.example.itu_communicationapp.ui.channels;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,14 +12,14 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.itu_communicationapp.databinding.FragmentNewsBinding;
 
-public class NewsFragment extends Fragment{
+public class ChannelsFragment extends Fragment{
 
     private FragmentNewsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NewsViewModel newsViewModel =
-                new ViewModelProvider(this).get(NewsViewModel.class);
+        ChannelsViewModel newsViewModel =
+                new ViewModelProvider(this).get(ChannelsViewModel.class);
 
         binding = FragmentNewsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
