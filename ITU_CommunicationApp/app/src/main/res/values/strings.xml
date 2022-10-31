@@ -6,4 +6,10 @@
     <string name="title_notifications">Notifications</string>
     <string name="channels">Channels</string>
     <string name="title_courses">Courses</string>
+    <string name="title_channel">Channels</string>
+    <string name="messages">messages</string>
+    <string name="hello_message">Hello - I\'m a message</string>
+    <string name="inbox">Inbox</string>
+    <string name="profile">Profile</string>
+    <string name="learn_it_overview">Learn it overview</string>
 </resources>

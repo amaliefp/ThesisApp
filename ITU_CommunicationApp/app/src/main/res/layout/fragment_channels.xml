@@ -7,7 +7,7 @@
     tools:context=".ui.channels.ChannelsFragment">
 
     <TextView
-        android:id="@+id/text_news"
+        android:id="@+id/text_channels"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
