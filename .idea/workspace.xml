@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="700b9004-aa93-47c2-a2d3-ed28164a5dde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/ITU_CommunicationApp/app/src/main/java/com/example/itu_communicationapp/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ITU_CommunicationApp/app/src/main/java/com/example/itu_communicationapp/PostDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ITU_CommunicationApp/app/src/main/java/com/example/itu_communicationapp/database/PostBaseHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ITU_CommunicationApp/app/src/main/java/com/example/itu_communicationapp/database/PostDbSchema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +19,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2FwckOUQPh60KzwjgiQAdC2h9A8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,9 +30,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ITU_CommunicationApp" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -37,10 +49,15 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="726" y="291" key="FileChooserDialogImpl" timestamp="1665406748985">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="726" y="291" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1665406748985" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
