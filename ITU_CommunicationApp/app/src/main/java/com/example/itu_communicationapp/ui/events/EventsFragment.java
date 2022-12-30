@@ -1,4 +1,4 @@
-package com.example.itu_communicationapp.ui.event;
+package com.example.itu_communicationapp.ui.events;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,24 +11,24 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.itu_communicationapp.databinding.FragmentEventBinding;
+import com.example.itu_communicationapp.databinding.FragmentEventsBinding;
 
-public class EventFragment extends Fragment {
+public class EventsFragment extends Fragment {
 
-    private FragmentEventBinding binding;
+    private FragmentEventsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        EventViewModel eventViewModel =
-                new ViewModelProvider(this).get(EventViewModel.class);
+        EventsViewModel eventsViewModel =
+                new ViewModelProvider(this).get(EventsViewModel.class);
 
-        binding = FragmentEventBinding.inflate(inflater, container, false);
+        binding = FragmentEventsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textEvent;
         final ImageButton firstEvent = binding.firstEventEvent;
         final ImageButton secondEvent = binding.secondEventEvent;
-        eventViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        eventsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
