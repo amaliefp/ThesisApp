@@ -1,4 +1,4 @@
-package com.example.itu_communicationapp.ui.news;
+package com.example.itu_communicationapp.ui.courses;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.itu_communicationapp.databinding.FragmentNewsBinding;
+import com.example.itu_communicationapp.databinding.FragmentCoursesBinding;
 
-public class NewsFragment extends Fragment{
+public class CourseFragment extends Fragment {
 
-    private FragmentNewsBinding binding;
+    private FragmentCoursesBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NewsViewModel newsViewModel =
-                new ViewModelProvider(this).get(NewsViewModel.class);
+        CourseViewModel courseViewModel =
+                new ViewModelProvider(this).get(CourseViewModel.class);
 
-        binding = FragmentNewsBinding.inflate(inflater, container, false);
+        binding = FragmentCoursesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNews;
-        newsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textCourse;
+        courseViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

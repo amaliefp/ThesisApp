@@ -10,7 +10,7 @@ public class NotificationsViewModel extends ViewModel {
 
     public NotificationsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Home page will function as newsfeed- so considering making this tab into a 'profile tab' instead");
+        mText.setValue("Listview of notifications - difference between read and unread notifications");
     }
 
     public LiveData<String> getText() {

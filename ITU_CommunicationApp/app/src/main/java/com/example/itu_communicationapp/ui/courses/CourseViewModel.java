@@ -1,16 +1,16 @@
-package com.example.itu_communicationapp.ui.home;
+package com.example.itu_communicationapp.ui.courses;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class CourseViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public CourseViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("News highlights, suggestions for events, button to write messages");
+        mText.setValue("Courses overview from LearnIT and Quicklinks overview");
     }
 
     public LiveData<String> getText() {

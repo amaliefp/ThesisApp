@@ -1,35 +1,32 @@
-package com.example.itu_communicationapp.ui.home;
+package com.example.itu_communicationapp.ui.channels;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.itu_communicationapp.databinding.FragmentHomeBinding;
+import com.example.itu_communicationapp.databinding.FragmentChannelsBinding;
 
-public class HomeFragment extends Fragment {
+public class ChannelsFragment extends Fragment{
 
-    private FragmentHomeBinding binding;
+    private FragmentChannelsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        ChannelsViewModel channelsViewModel =
+                new ViewModelProvider(this).get(ChannelsViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentChannelsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textChannels;
+        channelsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
-
     }
 
     @Override
