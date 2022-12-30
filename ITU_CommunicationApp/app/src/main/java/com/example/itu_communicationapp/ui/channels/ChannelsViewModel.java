@@ -10,7 +10,7 @@ public class ChannelsViewModel extends ViewModel {
 
     public ChannelsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Subscribe to channels based on your interests");
+        mText.setValue("A forum where students can join channels based on their interest. Information can be posted and students can interact with each other via posts or comments");
     }
 
     public LiveData<String> getText() {

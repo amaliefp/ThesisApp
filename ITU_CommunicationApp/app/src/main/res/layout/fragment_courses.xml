@@ -9,7 +9,7 @@
     tools:context=".ui.courses.CourseFragment"
     tools:ignore="UseCompoundDrawables">
 
-    <!-- A CardView that contains a TextView
+    <!-- A CardView that contains a TextView -> Delete if we decide not to use before hand-in
     <androidx.cardview.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"

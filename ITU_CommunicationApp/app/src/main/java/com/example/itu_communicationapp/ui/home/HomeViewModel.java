@@ -10,7 +10,7 @@ public class HomeViewModel extends ViewModel {
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();  //LiveData ensures that our UI matches our data state
-        mText.setValue("News Feed");
+        mText.setValue("The home screen is a news feed where posts from channels, events and courses are highlighted based on user preferences.");
     }
 
     public LiveData<String> getText() {
