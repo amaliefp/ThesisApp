@@ -2,12 +2,13 @@ package com.example.itu_communicationapp;
 
 public class Post {
 
+    //add Post ID
     private String pTitle;
     private String pContent;
-    private date pDate;
+    private int pDate;
 
 
-    public Post(String title, String content, date date) {
+    public Post(String title, String content, int date) {
         pTitle = title;
         pContent = content;
         pDate = date;
@@ -21,7 +22,7 @@ public class Post {
         return pContent;
     }
 
-    public date getDate() {
+    public int getDate() {
         return pDate;
     }
 

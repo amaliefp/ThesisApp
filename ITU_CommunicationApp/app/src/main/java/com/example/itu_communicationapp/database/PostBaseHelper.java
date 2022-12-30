@@ -16,8 +16,8 @@ public class PostBaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + ItemTable.NAME + "(" +
-                PostTable.Cols.POSTTITLE + ", " + PostTable.Cols.CONTENT + ", " + ItemTable.Cols.DATE +")"
+        db.execSQL("create table " + PostTable.NAME + "(" +
+                PostTable.Cols.POSTTITLE + ", " + PostTable.Cols.CONTENT + ", " + PostTable.Cols.DATE +")"
         );
     }
 
