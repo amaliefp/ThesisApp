@@ -10,7 +10,7 @@ public class ChannelsViewModel extends ViewModel {
 
     public ChannelsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Overview of 'channels' you are subscribed to (e.g. scroll bar, novo nordisk, private group channels') + un/subscribe button, list overview of other channel (new channels first) + un/subscribe button, when clicking on a channel we can see posts related to this channel");
+        mText.setValue("Subscribe to channels based on your interests");
     }
 
     public LiveData<String> getText() {
