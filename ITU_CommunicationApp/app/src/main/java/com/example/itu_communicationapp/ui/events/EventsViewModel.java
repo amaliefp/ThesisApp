@@ -1,19 +1,33 @@
 package com.example.itu_communicationapp.ui.events;
 
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.itu_communicationapp.Event;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class EventsViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
+    //private final MutableLiveData<Event> mEvent;
+    private static ArrayList eventList;
 
     public EventsViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("split view; top view signed up events, bottom view list of events chronologically incl. sign up deadline + signup button - on the left side perhaps a button to see calendar overview incl. courses + hand-ins dates (from LearnIT)");
+        //this.mEvent = new MutableLiveData<>();
+        //mEvent.setValue("I'm an event", "by event", "19/01-2022");
+        this.eventList = new ArrayList<>();
+        eventList.add(new Event("1", "fdsf", "gdfd"));
+        eventList.add(new Event("2", "fdsf", "gdfd"));
+        eventList.add(new Event("3", "fdsf", "gdfd"));
+        eventList.add(new Event("4", "fdsf", "gdfd"));
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public ArrayList<Event> getEventList() {
+        return eventList;
+    }
+
+    public void setEventList(ArrayList<Event> eventList) {
+        EventsViewModel.eventList = eventList;
     }
 }
