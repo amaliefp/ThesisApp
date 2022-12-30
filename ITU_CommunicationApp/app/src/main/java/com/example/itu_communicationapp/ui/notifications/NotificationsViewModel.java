@@ -10,7 +10,7 @@ public class NotificationsViewModel extends ViewModel {
 
     public NotificationsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Listview of notifications - difference between read and unread notifications");
+        mText.setValue("No new notifications - all up to date!");
     }
 
     public LiveData<String> getText() {
