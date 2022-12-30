@@ -10,7 +10,7 @@ public class HomeViewModel extends ViewModel {
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();  //LiveData ensures that our UI matches our data state
-        mText.setValue("News highlights, suggestions for events, button to write messages");
+        mText.setValue("News Feed");
     }
 
     public LiveData<String> getText() {

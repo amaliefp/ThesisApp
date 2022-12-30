@@ -10,8 +10,8 @@
 
     <Button
         android:id="@+id/message_button"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@drawable/ic_baseline_mail_24"
         android:backgroundTint="#00E5FF"
         android:contentDescription="@string/messages"
@@ -23,8 +23,8 @@
 
     <Button
         android:id="@+id/profile_button"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/ic_baseline_person_outline_24"
         android:contentDescription="@string/profile"
@@ -46,4 +46,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button" />
+
+    <ImageView
+        android:id="@+id/student_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/channels_overview"
+        android:isScrollContainer="false"
+        app:srcCompat="@drawable/itu_student_news" />
 </androidx.constraintlayout.widget.ConstraintLayout>
