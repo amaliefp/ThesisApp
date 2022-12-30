@@ -1,12 +1,12 @@
 package com.example.itu_communicationapp.database;
 
-public class PostDbSchema {
+public class EventDbSchema {
 
-    public static final class PostTable {
-        public static final String NAME = "Posts";
+    public static final class EventTable {
+        public static final String NAME = "Events";
 
         public static final class Cols {
-            public static final String POSTTITLE = "name";
+            public static final String EVENTTITLE = "name";
             public static final String CONTENT = "content";  //where is a keyword in SQL
             public static final String DATE = "date";
 
