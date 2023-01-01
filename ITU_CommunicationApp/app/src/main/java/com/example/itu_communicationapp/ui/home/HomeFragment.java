@@ -14,6 +14,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.itu_communicationapp.databinding.FragmentHomeBinding;
 
+/**
+ * This fragment contains the UI for the Home screen, which is created upon opening the app and then binding the data
+ */
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
@@ -29,7 +32,6 @@ public class HomeFragment extends Fragment {
         final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
-
     }
 
     @Override

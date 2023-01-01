@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,6 +13,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.itu_communicationapp.databinding.FragmentEventsBinding;
 
+/**
+ * This fragment contains the UI for the Events screen, which is created upon opening the app and then binding the data
+ */
 public class EventsFragment extends Fragment {
 
     private FragmentEventsBinding binding;
@@ -26,8 +29,6 @@ public class EventsFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textEvent;
-        final ImageButton firstEvent = binding.firstEventEvent;
-        final ImageButton secondEvent = binding.secondEventEvent;
         eventsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

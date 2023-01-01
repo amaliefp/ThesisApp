@@ -12,6 +12,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.itu_communicationapp.databinding.FragmentChannelsBinding;
 
+/**
+ * This fragment contains the UI for the Channels screen, which is created upon opening the app and then binding the data
+ */
 public class ChannelsFragment extends Fragment{
 
     private FragmentChannelsBinding binding;

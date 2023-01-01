@@ -4,16 +4,20 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+/**
+ * This ViewModel contains the logic and data for the Events screen
+ */
 public class EventsViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
     public EventsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("split view; top view signed up events, bottom view list of events chronologically incl. sign up deadline + signup button - on the left side perhaps a button to see calendar overview incl. courses + hand-ins dates (from LearnIT)");
+        mText.setValue("Events will be listed here; in the top part of the screen will be a list of events a user has signed up for and in the bottom part new events will be listed");
     }
 
     public LiveData<String> getText() {
         return mText;
     }
+
 }

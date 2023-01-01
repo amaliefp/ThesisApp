@@ -2,7 +2,7 @@
     <string name="app_name">ITU_CommunicationApp</string>
     <string name="title_home">Home</string>
     <string name="title_news">News</string>
-    <string name="title_events">Event</string>
+    <string name="title_events">Events</string>
     <string name="title_notifications">Notifications</string>
     <string name="channels">Channels</string>
     <string name="title_courses">Courses</string>
@@ -12,4 +12,5 @@
     <string name="inbox">Inbox</string>
     <string name="profile">Profile</string>
     <string name="learn_it_overview">Learn it overview</string>
+    <string name="channels_overview">Channels</string>
 </resources>

@@ -4,13 +4,16 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+/**
+ * This ViewModel contains the logic and data for the Channels screen
+ */
 public class ChannelsViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
     public ChannelsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Overview of 'channels' you are subscribed to (e.g. scroll bar, novo nordisk, private group channels') + un/subscribe button, list overview of other channel (new channels first) + un/subscribe button, when clicking on a channel we can see posts related to this channel");
+        mText.setValue("A forum where students can join channels based on their interest. Information can be posted and students can interact with each other via posts or comments");
     }
 
     public LiveData<String> getText() {

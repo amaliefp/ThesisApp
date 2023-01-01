@@ -2,16 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".ui.home.HomeFragment">
 
-
+    <!--This button serves to illustrate and inbox on this screen, which needs to have functionality to view and write message -->
     <Button
         android:id="@+id/message_button"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@drawable/ic_baseline_mail_24"
         android:backgroundTint="#00E5FF"
         android:contentDescription="@string/messages"
@@ -20,11 +20,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <!--This button serves to illustrate a profile icon on this screen, which needs to have functionalities related to profile settings -->
     <Button
         android:id="@+id/profile_button"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/ic_baseline_person_outline_24"
         android:contentDescription="@string/profile"
@@ -36,8 +36,8 @@
 
     <TextView
         android:id="@+id/text_home"
-        android:layout_width="395dp"
-        android:layout_height="49dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"

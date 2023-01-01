@@ -12,6 +12,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.itu_communicationapp.databinding.FragmentNotificationsBinding;
 
+/**
+ * This fragment contains the UI for the Notifications screen, which is created upon opening the app and then binding the data
+ */
 public class NotificationsFragment extends Fragment {
 
     private FragmentNotificationsBinding binding;
