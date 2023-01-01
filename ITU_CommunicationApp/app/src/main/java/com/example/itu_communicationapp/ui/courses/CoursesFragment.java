@@ -12,20 +12,22 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.itu_communicationapp.databinding.FragmentCoursesBinding;
 
-public class CourseFragment extends Fragment {
-
+public class CoursesFragment extends Fragment {
+    /**
+     * This fragment contains the UI for the Courses screen, which is created upon opening the app and then binding the data
+     */
     private FragmentCoursesBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        CourseViewModel courseViewModel =
-                new ViewModelProvider(this).get(CourseViewModel.class);
+        CoursesViewModel coursesViewModel =
+                new ViewModelProvider(this).get(CoursesViewModel.class);
 
         binding = FragmentCoursesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textCourse;
-        courseViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        coursesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

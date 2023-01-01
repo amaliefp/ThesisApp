@@ -13,7 +13,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.itu_communicationapp.databinding.FragmentEventsBinding;
 
-
+/**
+ * This fragment contains the UI for the Events screen, which is created upon opening the app and then binding the data
+ */
 public class EventsFragment extends Fragment {
 
     private FragmentEventsBinding binding;
@@ -23,28 +25,11 @@ public class EventsFragment extends Fragment {
         EventsViewModel eventsViewModel =
                 new ViewModelProvider(this).get(EventsViewModel.class);
 
-        //View contentView = inflater.inflate(R.layout.fragment_events, container, false);
-        //ListView listView = contentView.findViewById(R.id.eventList);
-        //return contentView;
-
         binding = FragmentEventsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        // ArrayList<Event> events = eventsViewModel.getEventList();
-
-        // ArrayAdapter<Event> itemsAdapter =
-        // new ArrayAdapter<Event>(this, android.R.layout.simple_list_item_1, items);
-
-        // ListView listView = (ListView) findViewById(R.id.lvItems);
-        // listView.setAdapter(itemsAdapter);
-
-        // final ListView listView = binding.eventList;
-
         final TextView textView = binding.textEvent;
-        //final ImageButton firstEvent = binding.firstEventEvent;
-        //final ImageButton secondEvent = binding.secondEventEvent;
         eventsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        //eventsViewModel.getEventList().observe(getViewLifecycleOwner(), listView::setScrollX);
         return root;
     }
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.courses.CourseFragment"
+    tools:context=".ui.courses.CoursesFragment"
     tools:ignore="UseCompoundDrawables">
 
     <!-- A CardView that contains a TextView -> Delete if we decide not to use before hand-in

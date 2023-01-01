@@ -14,7 +14,9 @@ public class EventBaseHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, VERSION);
     }
 
-    //Creates the SQL table upon creation.
+    /**
+     * Creates the SQL table that can store events upon instantiation.
+     */
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + EventTable.NAME + "(" +
