@@ -1,5 +1,8 @@
 package com.example.itu_communicationapp.database;
 
+//This class contains the static final class 'EventTable'. Through EventDbSchema the SQL table is created
+//with its necessary columns as well as a name for the table.
+
 public class EventDbSchema {
 
     public static final class EventTable {

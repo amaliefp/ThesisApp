@@ -1,8 +1,10 @@
 package com.example.itu_communicationapp;
 
+//This class is for the 'Event' objects.
+//Each Event object is created with a title, content (description of event) and a date.
+
 public class Event {
 
-    //add Event ID
     private String eTitle;
     private String eContent;
     private String eDate;
