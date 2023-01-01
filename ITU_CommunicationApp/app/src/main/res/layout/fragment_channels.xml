@@ -19,14 +19,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Delete if we decide no pictures before hand-in
-    <ImageView
-        android:id="@+id/discord_image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/channels_overview"
-        android:isScrollContainer="false"
-        app:srcCompat="@drawable/discord_image" />
-     -->
 </androidx.constraintlayout.widget.ConstraintLayout>

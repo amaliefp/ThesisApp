@@ -7,7 +7,7 @@
     android:background="@color/white"
     tools:context=".ui.home.HomeFragment">
 
-
+    <!--This button serves to illustrate and inbox on this screen, which needs to have functionality to view and write message -->
     <Button
         android:id="@+id/message_button"
         android:layout_width="50dp"
@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <!--This button serves to illustrate a profile icon on this screen, which needs to have functionalities related to profile settings -->
     <Button
         android:id="@+id/profile_button"
         android:layout_width="50dp"
@@ -46,22 +46,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button" />
-
-    <TextView
-        android:id="@+id/home_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/functionalities_yet_to_be_implemented"/>
-    <!--
-    <ImageView   ->   Delete if we decide no pictures before hand-in
-        android:id="@+id/student_news"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/channels_overview"
-        android:isScrollContainer="false"
-        app:srcCompat="@drawable/itu_student_news" />
-        -->
 </androidx.constraintlayout.widget.ConstraintLayout>
